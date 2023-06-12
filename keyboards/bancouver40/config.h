@@ -19,11 +19,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
-/* key matrix size */
+/* Key matrix size */
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 10
 
-/* pin-out for PCB */
+/* Pin-out for PCB */
 #define MATRIX_ROW_PINS { F0, F1, F4, F5 }
 #define MATRIX_COL_PINS { B5, B4, D7, D6, D4, D5, D3, D2, D1, D0 }
 
@@ -32,3 +32,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 10
+
+/* Configure the global tapping term (default: 200ms) */
+#define TAPPING_TERM 200
+
+/* Prevent normal rollover on alphas from accidentally triggering mods */
+#define IGNORE_MOD_TAP_INTERRUPT
+
+/* Enable rapid switch from tap to hold, disables double tap hold auto-repeat */
+#define QUICK_TAP_TERM 0
