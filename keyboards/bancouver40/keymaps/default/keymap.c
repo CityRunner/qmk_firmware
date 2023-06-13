@@ -62,6 +62,17 @@ enum bancouver40_layers {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
+/* Colemak
+ * ,-------------------------------------------------------------------------------.
+ * |   q   |   w   |   f   |   p   |   b   |   j   |   l   |   u   |   y   |  ; :  |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * | a-gui | r-alt |s-ctrl |t-shift|   g   |   m   |n-shift|e-ctrl | i-alt | o-gui |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |   z   |   x   |   c   |   d   |   v   |   k   |   h   |  , <  |  . >  |  / ?  |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |system | menu  |  tab  |spc-num|esc-sym|ent-fun|bsp-nav|  del  | vol+  | vol-  |
+ * `-------------------------------------------------------------------------------'
+ */
   [_COLEMAK] = LAYOUT_ortho_4x10(
     KC_Q,    KC_W,   KC_F,   KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,
     GUI_A,   ALT_R,  CTR_S,  SHF_T,   KC_G,    KC_M,    SHF_N,   CTR_E,   ALT_I,   GUI_O,
@@ -69,6 +80,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     SYS_NUL, KC_APP, KC_TAB, NUM_SPC, SYM_ESC, FUN_ENT, NAV_BSP, KC_DEL,  KC_VOLU, KC_VOLD
     ),
 
+/* QWERTY
+ * ,-------------------------------------------------------------------------------.
+ * |   q   |   w   |   e   |   r   |   t   |   y   |   y   |   i   |   o   |   p   |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * | a-gui | s-alt |d-ctrl |f-shift|   g   |   h   |j-shift|k-ctrl | l-alt | ;-gui |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |   z   |   x   |   c   |   v   |   b   |   n   |   m   |  , <  |  . >  |  / ?  |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |system | menu  |  tab  |spc-num|esc-sym|ent-fun|bsp-nav|  del  | vol+  | vol-  |
+ * `-------------------------------------------------------------------------------'
+ */
   [_QWERTY] = LAYOUT_ortho_4x10(
     KC_Q,    KC_W,   KC_E,   KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
     GUI_A,   ALT_S,  CTR_D,  SHF_F,   KC_G,    KC_H,    SHF_J,   CTR_K,   ALT_L,   GUI_SCLN,
@@ -76,6 +98,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     SYS_NUL, KC_APP, KC_TAB, NUM_SPC, SYM_ESC, FUN_ENT, NAV_BSP, KC_DEL,  KC_VOLU, KC_VOLD
     ),
 
+/* Numeric
+ * ,-------------------------------------------------------------------------------.
+ * |       |       |       |       |       |       |  7 &  |  8 *  |  9 (  |  0 )  |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |       |       |       |       |       |  4 $  |  5 %  |  6 ^  |  - _  |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |       |       |       |       |       |  1 !  |  2 @  |  3 $  |  = +  |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |       |       |       |       |       |       |       |       |       |
+ * `-------------------------------------------------------------------------------'
+ */
   [_NUMERIC] = LAYOUT_ortho_4x10(
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_7,    KC_8,    KC_9,    KC_0,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_4,    KC_5,    KC_6,    KC_MINUS,
@@ -83,6 +116,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
     ),
 
+/* Symbolic
+ * ,-------------------------------------------------------------------------------.
+ * |       |       |       |       |       |       |       |       |  [ {  |  ] }  |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |       |       |       |       |       |       |       |  ` ~  |  ' "  |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |       |       |       |       |       |       |       |       |  \ |  |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |       |       |       |       |       |       |       |       |       |
+ * `-------------------------------------------------------------------------------'
+ */
   [_SYMBOLIC] = LAYOUT_ortho_4x10(
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LBRC, KC_RBRC,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_GRV,  KC_QUOT,
@@ -90,6 +134,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
     ),
 
+/* Function
+ * ,-------------------------------------------------------------------------------.
+ * |  F1   |  F2   |  F3   |  F4   |       |       |       |       |       |       |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |  F5   |  F6   |  F7   |  F8   |       |       |       |       |       |       |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |  F9   |  F10  |  F11  |  F12  |       |       |       |       |       |       |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |       |       |       |       |       |       |       |       |       |
+ * `-------------------------------------------------------------------------------'
+ */
   [_FUNCTION] = LAYOUT_ortho_4x10(
     KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
@@ -97,6 +152,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
     ),
 
+/* Navigation
+ * ,-------------------------------------------------------------------------------.
+ * | home  |  end  |page up|page dn|       |       |       |       |       |       |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |  up   | down  | left  | right |       |       |       |       |       |       |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |       |       |       |       |       |       |       |       |       |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |       |       |       |       |       |       |       |       |       |
+ * `-------------------------------------------------------------------------------'
+ */
   [_NAVIGATION] = LAYOUT_ortho_4x10(
     KC_HOME, KC_END,  KC_PGUP, KC_PGDN,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_UP  , KC_DOWN, KC_LEFT, KC_RIGHT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
@@ -104,6 +170,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
     ),
 
+/* System
+ * ,-------------------------------------------------------------------------------.
+ * |spleep |       |       |       |       |       |       |       |       | pause |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * | caps  |       |       |       |       |       |       |       |       |insert |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |       |       |       |       |       |       |       |       |       |
+ * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
+ * |       |Colemak|QWERTY |       |       |       |       |       |bright+|bright-|
+ * `-------------------------------------------------------------------------------'
+ */
   [_SYSTEM] = LAYOUT_ortho_4x10(
     KC_SLEP, KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_PAUSE,
     KC_CAPS, KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_INS,
@@ -114,7 +191,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 enum combos {
+  /* [vol+] and [vol-] for [mute] */
   VOL_MUTE,
+  /* [y] and [;] for [prt scrn] */
   COL_PRNT,
 };
 
