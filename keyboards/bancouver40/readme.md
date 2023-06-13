@@ -1,8 +1,9 @@
 # bancouver40 
 
-Custom layout for [bancouver40](https://github.com/ChrisChrisLoLo/bancouver40) keyboard by [sporewoh](https://github.com/ChrisChrisLoLo)
+Custom layout for [bancouver40](https://github.com/ChrisChrisLoLo/bancouver40)
 
-* Layout made by [cityrunner](https://github.com/CityRunner)
+* Keybard author and maintainer ir [sporewoh](https://github.com/ChrisChrisLoLo)
+* Layout made by [CityRunner](https://github.com/CityRunner)
 
 Make example for this keyboard (after setting up your build environment):
 
