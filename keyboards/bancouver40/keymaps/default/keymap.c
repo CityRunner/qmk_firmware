@@ -30,24 +30,24 @@ enum bancouver40_layers {
 /* Left-hand home row mods for QWERTY */
 #define GUI_A LGUI_T(KC_A)
 #define ALT_S LALT_T(KC_S)
-#define SFT_D LSFT_T(KC_D)
-#define CTR_F LCTL_T(KC_F)
+#define CTR_D LCTL_T(KC_D)
+#define SFT_F LSFT_T(KC_F)
 
 /* Right-hand home row mods for QWERTY */
-#define CTR_J RCTL_T(KC_J)
-#define SFT_K RSFT_T(KC_K)
+#define SFT_J RSFT_T(KC_J)
+#define CTR_K RCTL_T(KC_K)
 #define ALT_L LALT_T(KC_L)
 #define GUI_SCLN RGUI_T(KC_SCLN)
 
 /* Left-hand home row mods for Colemak */
 #define GUI_A LGUI_T(KC_A)
 #define ALT_R LALT_T(KC_R)
-#define SFT_S LSFT_T(KC_S)
-#define CTR_T LCTL_T(KC_T)
+#define CTR_S LCTL_T(KC_S)
+#define SWT_T LSFT_T(KC_T)
 
 /* Right-hand home row mods for Colemak */
-#define CTR_N RCTL_T(KC_N)
-#define SFT_E RSFT_T(KC_E)
+#define SFT_N RSFT_T(KC_N)
+#define CTR_E RCTL_T(KC_E)
 #define ALT_I LALT_T(KC_I)
 #define GUI_O RGUI_T(KC_O)
 
@@ -61,9 +61,6 @@ enum bancouver40_layers {
 /* Layout switching */
 #define LAY_COL DF(_COLEMAK)
 #define LAY_QWE DF(_QWERTY)
-
-
-KC_PSCR
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -110,9 +107,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
   [_SYSTEM] = LAYOUT_ortho_4x10(
-    KC_SLEP, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_PAUSE,
-    KC_CAPS, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_INS,
-    KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,
+    KC_SLEP, KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_PAUSE,
+    KC_CAPS, KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_INS,
+    KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,
     KC_TRNS, LAY_COL, LAY_QWE, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BRID, KC_BRIU
     )
 
