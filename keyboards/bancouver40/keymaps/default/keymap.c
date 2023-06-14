@@ -70,14 +70,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |   z   |   x   |   c   |   d   |   v   |   k   |   h   |  , <  |  . >  |  / ?  |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |system | menu  |  tab  |spc-num|esc-sym|ent-fun|bsp-nav|  del  | vol+  | vol-  |
+ * |system | menu  |  tab  |spc-num|esc-sym|ent-fun|bsp-nav|  del  | vol-  | vol+  |
  * `-------------------------------------------------------------------------------'
  */
   [_COLEMAK] = LAYOUT_ortho_4x10(
     KC_Q,    KC_W,   KC_F,   KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN,
     GUI_A,   ALT_R,  CTR_S,  SHF_T,   KC_G,    KC_M,    SHF_N,   CTR_E,   ALT_I,   GUI_O,
     KC_Z,    KC_X,   KC_C,   KC_D,    KC_V,    KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH,
-    SYS_NUL, KC_APP, KC_TAB, NUM_SPC, SYM_ESC, FUN_ENT, NAV_BSP, KC_DEL,  KC_VOLU, KC_VOLD
+    SYS_NUL, KC_APP, KC_TAB, NUM_SPC, SYM_ESC, FUN_ENT, NAV_BSP, KC_DEL,  KC_VOLD, KC_VOLU
     ),
 
 /* QWERTY
@@ -88,14 +88,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |   z   |   x   |   c   |   v   |   b   |   n   |   m   |  , <  |  . >  |  / ?  |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |system | menu  |  tab  |spc-num|esc-sym|ent-fun|bsp-nav|  del  | vol+  | vol-  |
+ * |system | menu  |  tab  |spc-num|esc-sym|ent-fun|bsp-nav|  del  | vol-  | vol+  |
  * `-------------------------------------------------------------------------------'
  */
   [_QWERTY] = LAYOUT_ortho_4x10(
     KC_Q,    KC_W,   KC_E,   KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,
     GUI_A,   ALT_S,  CTR_D,  SHF_F,   KC_G,    KC_H,    SHF_J,   CTR_K,   ALT_L,   GUI_SCLN,
     KC_Z,    KC_X,   KC_C,   KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,
-    SYS_NUL, KC_APP, KC_TAB, NUM_SPC, SYM_ESC, FUN_ENT, NAV_BSP, KC_DEL,  KC_VOLU, KC_VOLD
+    SYS_NUL, KC_APP, KC_TAB, NUM_SPC, SYM_ESC, FUN_ENT, NAV_BSP, KC_DEL,  KC_VOLD, KC_VOLU
     ),
 
 /* Numeric
@@ -178,20 +178,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |       |       |       |       |       |       |       |       |       |       |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |       |Colemak|QWERTY |       |       |       |       |       |bright+|bright-|
+ * |       |Colemak|QWERTY |       |       |       |       |       |bright-|bright+|
  * `-------------------------------------------------------------------------------'
  */
   [_SYSTEM] = LAYOUT_ortho_4x10(
     KC_SLEP, KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_PAUSE,
     KC_CAPS, KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_INS,
     KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,
-    KC_TRNS, LAY_COL, LAY_QWE, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BRIU, KC_BRID
+    KC_TRNS, LAY_COL, LAY_QWE, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BRID, KC_BRIU
     )
 
 };
 
 enum combos {
-  /* [vol+] and [vol-] for [mute] */
+  /* [vol-] and [vol+] for [mute] */
   VOL_MUTE,
   /* [y] and [;] for [prt scrn] */
   COL_PRNT,
