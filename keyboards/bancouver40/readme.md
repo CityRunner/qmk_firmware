@@ -2,7 +2,7 @@
 
 Custom layout for [bancouver40](https://github.com/ChrisChrisLoLo/bancouver40)
 
-* Keybard author and maintainer is [sporewoh](https://github.com/ChrisChrisLoLo)
+* Keyboard author and maintainer is [sporewoh](https://github.com/ChrisChrisLoLo)
 * Layout made by [CityRunner](https://github.com/CityRunner)
 
 ![](https://i.imgur.com/t9bcYgv.png)
